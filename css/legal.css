@@ -1,0 +1,100 @@
+/* Yasal sayfalar — gizlilik, kullanım şartları */
+
+.legal-body {
+  overflow-x: hidden;
+}
+
+.legal-main {
+  padding: 7rem 0 4rem;
+  min-height: 100vh;
+}
+
+.legal-doc {
+  max-width: 720px;
+  margin-inline: auto;
+  padding: 2.75rem 2.5rem;
+  border-radius: var(--r-lg);
+}
+
+.legal-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.legal-header h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 4vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.legal-updated {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.legal-section {
+  margin-bottom: 2rem;
+}
+
+.legal-section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.85rem;
+}
+
+.legal-section p {
+  color: var(--ink-soft);
+  margin-bottom: 0.85rem;
+  line-height: 1.75;
+}
+
+.legal-section ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  color: var(--ink-soft);
+}
+
+.legal-section li {
+  margin-bottom: 0.45rem;
+  line-height: 1.65;
+  padding-left: 0.25rem;
+}
+
+.legal-section li::marker {
+  color: var(--rose-mid);
+}
+
+.legal-section a {
+  color: var(--rose);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 109, 134, 0.35);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.legal-section a:hover {
+  color: var(--rose-dark, #a8647a);
+  border-color: var(--rose-mid);
+}
+
+.legal-back {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .legal-doc {
+    padding: 2rem 1.35rem;
+  }
+
+  .legal-main {
+    padding-top: 6rem;
+  }
+}
